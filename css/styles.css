@@ -205,34 +205,59 @@ p{
 
 /* OSOBLIVOSTI */
 
-.futures{
-    padding-bottom: 0px;
-}
-
-.list-futures{
+.list-features {
     display: flex;
-    padding: 0;
-    gap: 30px;
-
+    padding-inline-start: 0px;
+    margin: 0px;
+    list-style-type: none;
 }
 
-.list-svg{
-    display: flex;
-    gap: 30px;
+.list-features .feature-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;    
 }
 
-.futures-svg{
+.features-list .features-text {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
     width: 270px;
+    margin: 0px;
+}
+
+.item-list::before {
+    display: block;
+    content: "";
     height: 120px;
-    background: var(--background-color-team);
+    background-color: var(--third-bg-color);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
     border-radius: 4px;
-    padding: 25px 100px 25px 100px;
 }
-.item{
-    /* display: block; */
-    width:270px;
-    padding-top: 30px;
+
+.item-list:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
 }
+.item-list:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+}
+.item-list:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+}
+.item-list:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+}
+
+.item-list:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .ninja{
     position: absolute;
@@ -286,6 +311,10 @@ p{
 }
 
 .team{
+    background-color: #F5F4FA;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--background-color-team);
 }
 
@@ -321,6 +350,7 @@ p{
 }
 
 .developer{
+    background-color: var(--whrite);
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
     rgba(0, 0, 0, 0.14), 0px 2px 1px 
@@ -339,18 +369,33 @@ p{
     padding-top: 16px;
 }
 
-.team-soc-list .team-soc-item{
+.team-soc-item{
     background-color: #ffffff;
     border-radius: 50px;
     padding-top: 12px;
     padding-left: 12px;
+    cursor: pointer;
 }
+
+.team-soc-icon{
+    fill: #757575;
+}
+
+.team-soc-item:hover{
+    background-color: #2196F3;
+}
+
+.team-soc-icon:hover{
+    fill: #FFFFFF;
+}
+
 /* CLIENTS */
 
 .clients{
     display: flex;
     gap: 30px;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 .company{
@@ -359,6 +404,28 @@ p{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px 16px 32px;
+}
+
+.link-clients{
+    background-color: #2196F3;
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: #AFB1B8 1px solid;
+    border-radius: 4px;
+    padding: auto;
+}
+
+.svg-fill{
+    fill:#757575;
+}
+
+.svg-fill:hover{
+    fill: #2196F3;
+}
+
+.company:hover{
+    border-color: #2196F3;
 }
 /* FOOTER */
 
@@ -443,8 +510,8 @@ p{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--white-text-color);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--whrite);
 }
 .footer-soc-title{
     font-family: 'Roboto';
@@ -586,9 +653,6 @@ body{
     letter-spacing: 0.03em;
 }
 
-img{
-    margin: 0;
-}
 
 ul{
     list-style-type: none;
@@ -738,7 +802,7 @@ p{
 /* OSOBLIVOSTI */
 
 .futures{
-    padding-bottom: 0px;
+    padding-bottom: 94px;
 }
 
 .list-futures{
@@ -922,6 +986,8 @@ p{
 
 .list-img{
     width: 370px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
 .filter-text{
     padding: 20px 24px;
@@ -943,7 +1009,8 @@ p{
 } */
 
 .filter-button{
-    background-color: var(--whrite);
+    background: #F5F4FA;
+    border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -978,4 +1045,3 @@ p{
     letter-spacing: 0.03em;
     color:var(--primary-color-text)
 }
-
