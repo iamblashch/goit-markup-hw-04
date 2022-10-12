@@ -46,6 +46,9 @@ p{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
 
 .container {
     max-width: 1200px;
@@ -243,15 +246,19 @@ p{
 
 .item-list:nth-child(1)::before {
     background-image: url(../images/antenna.svg);
+    background-color: #F5F4FA;
 }
 .item-list:nth-child(2)::before {
     background-image: url(../images/clock.svg);
+    background-color: #F5F4FA;
 }
 .item-list:nth-child(3)::before {
     background-image: url(../images/diagram.svg);
+    background-color: #F5F4FA;
 }
 .item-list:nth-child(4)::before {
     background-image: url(../images/astronaut.svg);
+    background-color: #F5F4FA;
 }
 
 .item-list:not(:last-child) {
@@ -378,7 +385,7 @@ p{
 }
 
 .team-soc-icon{
-    fill: #757575;
+    fill: #AFB1B8;
 }
 
 .team-soc-item:hover{
@@ -417,7 +424,7 @@ p{
 }
 
 .svg-fill{
-    fill:#757575;
+    fill: #AFB1B8;
 }
 
 .svg-fill:hover{
@@ -526,7 +533,7 @@ p{
 }
 
 .footer-soc-link{
-    background-color: #757575;
+    background-color: rgba(255, 255, 255, 0.1);;
     border-radius: 50px;
 }
 
@@ -997,8 +1004,8 @@ p{
     margin-bottom: 9px; 
 }
 
-.list-img:hover,
-.list-img:focus{
+.list-img-link:hover,
+.list-img-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1044,4 +1051,14 @@ p{
     line-height: 1.88;
     letter-spacing: 0.03em;
     color:var(--primary-color-text)
+}
+
+.filter-text-one{
+    color: var(--primary-color-text);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    padding: 0px;
 }
